@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="plugin/se2/js/service/HuskyEZCreator.js" charset="utf-8"></script>
+        <title>Momentum</title>
+    </head>
+    <body>
+        <div id="wrappers">
+            <div id="background"></div>
+            <div class="login">
+                <form id="loginform">
+                    <h1>Hello, What Your Name?</h1>
+                    <input
+                    type="text"
+                    placeholder="Please, Enter Your Name. "
+                    required
+                    />
+                </form>
+            </div>
+            <div id="modal">
+                <div id="modalMain">
+                    <div id="modalclose">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <form>
+                        <label>E-MAIL</label>
+                        <input class="email" type="email" placeholder="대상의 이메일 주소를 입력하세요" required></input>
+                        <label>TITLE</label>
+                        <input class="mailtitle" type="text" placeholder="제목을 입력하세요"required>
+                        <textarea name="ir1" id="ir1" rows="10" cols="100" ></textarea>
+                        <button type="submit">SEND</button>
+                    </form>
+                </div>
+            </div>
+            <div class="main hidden">
+                <div id="welcome">
+                    <span>Hello, Geonmin</span>
+                    <a href="#" class="mail"><i class="fas fa-envelope"></i></a>
+                </div>
+                <h1 id="clock">00:00:00</h1>
+                <div id="quote">
+                    <div></div>
+                    <div>he</div>
+                </div> 
+                <form id="todoform">
+                    <input type="text" placeholder="To Do List" required />
+                </form>
+                <ul id="todolist"></ul>
+                <div id="weather">
+                    <div class="weatherIcon"><img src=""></div>
+                    <div class="weatherTemp">21℃</div>
+                    <div class="weatherCity">Seoul</div>
+                </div>
+                <button id="logout">Logout</button>
+            </div>
+        </div>
+        
+        <script src="js/login.js"></script>
+        <script src="js/weather.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/quote.js"></script>
+        <script src="js/todo.js"></script>
+        <script src="js/mail.js"></script>
+        
+    </body>
+    </html>
+    
